@@ -3,8 +3,8 @@ from PIL import Image, ImageTk
 import io
 import requests
 
-API_URL = "https://api-inference.huggingface.co/models/Sadik-Sikder/mini_sd"
-HEADERS = {"Authorization": "Bearer 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"}
+API_URL = "https://api-inference.huggingface.co/models/your model"
+HEADERS = {"Authorization": "api key"}
 def display_image_from_bytes(image_bytes):
     try:
         image = Image.open(io.BytesIO(image_bytes))
